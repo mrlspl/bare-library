@@ -30,7 +30,7 @@ Do we need to make it easy for us and them? Of course, we should!
 The point is to separate implementations and interfaces neatly. There is a
 directory hirerarchy to categorize and organize files for different purposes.
 
-	- /includes:
+	- /include:
 		This folder is the most sensative part. The files in it define
 		classes in which the actual jobs are done and the definitions
 		should stay compatible to many things. A change in this part is
@@ -46,7 +46,7 @@ directory hirerarchy to categorize and organize files for different purposes.
 		relatively safe place to make changes. Implementation of a
 		class can be changed as far as it does the same thing as viewd
 		from outside!
-	- /unit-tests:
+	- /unit-test:
 		Considering a code without automated tests?! Wrong choice! Here
 		is where you can place the unit tests for all the clases.
 		Obviously, a file in /includes means existence of another file
@@ -54,7 +54,7 @@ directory hirerarchy to categorize and organize files for different purposes.
 		for others in /includes. Test Driven Development is our
 		favorite! It's one of the beloved ways of being clear and
 		deliberative.
-	- /interfaces:
+	- /interface:
 		As mentioned above, this structure is meant to ease the pain of
 		reusing code for different purposes and we need a bunch of
 		interfaces for many of our classes. They are categorized here
