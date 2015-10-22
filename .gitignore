@@ -37,3 +37,7 @@
 .deps
 config.status
 Makefile
+
+
+# Make outputs
+.libs
