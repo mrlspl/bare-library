@@ -31,3 +31,9 @@
 # Eclipse Project Files
 .cproject
 .project
+
+
+# Configure shell output 
+.deps
+config.status
+Makefile
