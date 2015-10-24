@@ -38,7 +38,9 @@ autom4te.cache
 # Configure shell output 
 .deps
 config.status
+config.log
 Makefile
+libtool
 
 # Make outputs
 .libs
