@@ -1,4 +1,4 @@
-ACLOCAL_AMFLAGS = -I m4
+ACLOCAL_AMFLAGS = -I tools/m4
 AM_CPPFLAGS = -I$(top_srcdir)/include -I$(top_srcdir)/tools/cxxtest
 
 lib_LTLIBRARIES = libbarelibrary.la
