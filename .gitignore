@@ -43,6 +43,7 @@ Makefile
 # Make outputs
 .libs
 
-# Test Runner Binary
+# Test Runner Output
+unit-test/main.cpp
 testrunner
 
