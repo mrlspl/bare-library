@@ -32,9 +32,8 @@
 .cproject
 .project
 
-# Autotools caches and outputs
+# Autotools caches
 autom4te.cache
-Makefile.in
 
 # Configure shell output 
 .deps
