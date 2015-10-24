@@ -44,3 +44,5 @@ Makefile
 .libs
 
 # Test Runner Binary
+testrunner
+
