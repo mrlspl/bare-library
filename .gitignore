@@ -49,3 +49,8 @@ libtool
 unit-test/main.cpp
 testrunner
 
+# Matlab MEX objects
+*.mexglx
+
+# Backup files and Swaps
+*~
