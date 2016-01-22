@@ -10,8 +10,15 @@ class HelloWorldTestSuite : public CxxTest::TestSuite
 public:
     void testSayHello()
     {
-         HelloWorld h;
-         TS_ASSERT_EQUALS(h.sayHello().c_str(), "Hello World!");
+        HelloWorld h;
+        TS_ASSERT_EQUALS(h.sayHello().c_str(), "Hello World!");
+    }
+
+    void testSetAndGet()
+    {
+        HelloWorld h;
+        h.setNumber(20);
+        TS_ASSERT_EQUALS(h.getNumber(), 20);
     }
 };
 

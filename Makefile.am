@@ -10,7 +10,7 @@ bin_PROGRAMS = testrunner
 nodist_testrunner_SOURCES = unit-test/main.cpp
 testrunner_LDADD = libbarelibrary.la 
 
-unit-test/main.cpp: 
+unit-test/main.cpp: unit-test/*.h
 	tools/cxxtest/bin/cxxtestgen --error-printer -o unit-test/main.cpp unit-test/*.h
 	
 run-unit-tests : testrunner

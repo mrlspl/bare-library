@@ -35,5 +35,6 @@ void mexFunction(int nlhs, mxArray *plhs[],
     mexErrMsgIdAndTxt("BareLibrary:HelloWorld_create:nlhs",
         "Don't you wanna catch the function output?! This function has an output.");
 
-  plhs[0] = mxCreateString(convertMat2Ptr<BareLibrary::HelloWorld>(prhs[0])->sayHello().c_str());
+  plhs[0] = mxCreateDoubleMatrix(1, 1, mxREAL);
+  *mxGetPr(plhs[0]) = convertMat2Ptr<BareLibrary::HelloWorld>(prhs[0])->getNumber();
 }

@@ -1,16 +1,16 @@
 /*
- * HelloWorld_create - example of class constructor wrapper.
+ * HelloWorld_new - example of class constructor wrapper.
  *
  * Creates an instance of HelloWorld and returns its handle.
  *
  * The calling syntax is:
  *
- *    handle = HelloWorld_create()
+ *    handle = HelloWorld_new()
  *
  * The object is implemented in C++.
 */
 
-#include "MatlabInterface.h"
+#include "tools/tools.hpp"
 #include "HelloWorld.h"
 
 void mexFunction(int nlhs, mxArray *plhs[],
@@ -20,13 +20,9 @@ void mexFunction(int nlhs, mxArray *plhs[],
       mexErrMsgIdAndTxt("BareLibrary:HelloWorld_create:nrhs",
                         "No input is expected.");
 
-
   if(nlhs != 1)
       mexErrMsgIdAndTxt("BareLibrary:HelloWorld_create:nlhs",
                         "One output required.");
 
-  plhs[0] = mxCreateDoubleMatrix(1,1,mxREAL);
-  double *outMatrix = mxGetPr(plhs[0]);
-  BareLibrary::HelloWorld hw;
-  outMatrix[0] = MatlabInterface<BareLibrary::HelloWorld>::registerInstance(hw);
+  plhs[0] = convertPtr2Mat<BareLibrary::HelloWorld>(new BareLibrary::HelloWorld);
 }
