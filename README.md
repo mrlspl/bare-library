@@ -1,4 +1,4 @@
-![Bare-Library](bare-lib.png)
+![Bare-Library](https://github.com/mrlspl/bare-library/blob/master/bare-lib.png)
 # bare-library
 An empty skeleton of a library that may have many interfaces. e.g.: for
 different robots or simulators or prototyping languages like matlab.
