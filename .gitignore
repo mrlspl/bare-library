@@ -46,6 +46,7 @@ libtool
 .libs
 
 # Test Runner Output
+.dirstamp
 unit-test/main.cpp
 testrunner
 
@@ -54,3 +55,16 @@ testrunner
 
 # Backup files and Swaps
 *~
+
+# CMake
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+
+
